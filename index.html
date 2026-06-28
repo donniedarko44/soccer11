@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soccer Eleven — Football Management Agency</title>
+<meta name="description" content="Soccer Eleven is a football management agency run by Adrian Aliaj, specialising in player development, transfers, and global football management.">
+<link href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css" rel="stylesheet">
+<script defer src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- nav na stranicu -->
+<header id="header">
+  <div id="logo">
+    <img src="img/Soccer11_logo.png" alt="Soccer Eleven">
+    <div class="logo-wordmark">
+      <span class="logo-wordmark-top">SOCCER11</span>
+      <span class="logo-wordmark-sub"><span>Football</span><span>Management</span><span>Agency</span></span>
+    </div>
+  </div>
+  <nav id="nav-menu">
+    <a href="#about">About</a>
+    <a href="#services-section">Services</a>
+    <a href="#players">Players</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- hero gornji -->
+<section id="hero">
+  <img class="hero-img" src="img/stadium.jpg" alt="Football stadium at night">
+  <div class="hero-overlay"></div>
+
+
+  <!-- services sekcija -->
+  <ul class="hero-services">
+    <li>Talent</li>
+    <li>Strength</li>
+    <li>Speed</li>
+    <li>Vision</li>
+    <li>Hard Work</li>
+  </ul>
+
+  <!-- Bottom bar -->
+  <!-- Scroll arrow -->
+  <div class="hero-scroll-arrow" id="scroll-arrow">
+    <svg width="22" height="44" viewBox="0 0 22 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="11" y1="0" x2="11" y2="32" stroke="white" stroke-width="1.5" opacity="0.9"/>
+      <polyline points="3,24 11,36 19,24" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" opacity="0.9"/>
+    </svg>
+  </div>
+  <div class="hero-bottom">
+    <div class="hero-body">
+      <p>SOCCER11 is a football management agency, represented by FIFA-licensed football agent Adrian Aliaj, dedicated to guiding professional footballers through every stage of their careers. We provide strategic career management, contract negotiation, and international transfer support across global football markets.</p>
+    </div>
+  </div>
+</section>
+
+<!-- about sekcija -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <div class="about-photo-box">
+          <img src="img/adrian_aliaj.jpg" alt="Adrian Aliaj & Amir Rrahmani" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;">
+        </div>
+        <div class="about-badge"><span class="big">15</span><span class="sm">Years in<br>the Game</span></div>
+      </div>
+      <div class="about-body">
+        <p class="section-tag">About Us</p>
+        <h2 class="section-title reveal">A DIFFERENT<br>KIND OF AGENT</h2>
+        <div class="section-rule"></div>
+        <p class="reveal">Football management is about relationships, timing, and an uncompromising eye for talent. Adrian Aliaj founded Soccer Eleven with one conviction: every player deserves an agent who fights for them the way a coach fights for a win.</p>
+        <p class="reveal">With over 15 years of experience across European football, Adrian has built a network that reaches from the Adriatic coast to the Bundesliga, the Premier League, and beyond. Soccer Eleven's approach is personal, direct, and relentlessly professional.</p>
+        <p class="reveal">We handle transfers, contract negotiations, player development planning, and long-term career strategy — so our players can focus entirely on the pitch.</p>
+        <div class="about-sig reveal">
+          <div class="about-sig-line"></div>
+          <div>
+            <span class="about-sig-name">ADRIAN ALIAJ</span>
+            <span class="about-sig-role">Founder &amp; Football Manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services sekcija -->
+<section id="services-section" class="section">
+  <div class="section-inner">
+    <div class="services-hdr">
+      <div>
+        <p class="section-tag">What We Do</p>
+        <h2 class="section-title reveal" style="color:#fff;text-shadow:0 2px 16px rgba(0,0,0,0.8);">OUR SERVICES</h2>
+        <div class="section-rule"></div>
+      </div>
+      <p class="services-hdr-right reveal">End-to-end player representation — from first contract to final whistle.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal"><h3 class="svc-title">TRANSFERS</h3><p class="svc-desc">Identifying the right move at the right moment. We manage negotiations with clubs, ensuring the best sporting and financial terms.</p></div>
+      <div class="service-card reveal"><h3 class="svc-title">CONTRACT NEGOTIATION</h3><p class="svc-desc">Detailed, thorough, and always in the player's interest. We review every clause — fees, bonuses, and release terms.</p></div>
+      <div class="service-card reveal"><h3 class="svc-title">PLAYER DEVELOPMENT</h3><p class="svc-desc">Talent is just the start. We build long-term career roadmaps, from youth development through to peak professional years.</p></div>
+      <div class="service-card reveal"><h3 class="svc-title">SCOUTING</h3><p class="svc-desc">Our network spans Europe and the Balkans. We identify emerging talent early and connect them with the right clubs.</p></div>
+      <div class="service-card reveal"><h3 class="svc-title">CLUB PARTNERSHIPS</h3><p class="svc-desc">Long-standing relationships across multiple leagues mean we can open doors others can't — built on mutual trust.</p></div>
+      <div class="service-card reveal"><h3 class="svc-title">LEGAL &amp; ADVISORY</h3><p class="svc-desc">From FIFA licensing to image rights, every player is protected legally and commercially at every career stage.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- igraci i mapa -->
+<section id="players" class="section">
+  <div class="section-inner">
+    <div class="players-hdr">
+      <div>
+        <p class="section-tag">2025/2026</p>
+        <h2 class="section-title reveal">OUR PLAYERS</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="filter-row">
+        <button class="f-btn active" onclick="filterP('all',this)">All</button>
+        <button class="f-btn" onclick="filterP('GK',this)">GK</button>
+        <button class="f-btn" onclick="filterP('DEF',this)">DEF</button>
+        <button class="f-btn" onclick="filterP('MID',this)">MID</button>
+        <button class="f-btn" onclick="filterP('FWD',this)">FWD</button>
+      </div>
+    </div>
+    <div class="players-grid" id="players-grid"></div>
+    <div class="map-wrap reveal">
+      <div class="map-header">
+        <span class="map-header-title">PLAYER LOCATIONS — EUROPE</span>
+        <div class="map-legend"><div class="map-dot"></div><span>Active Club</span></div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
+
+<!-- kontakt sekcija-->
+<section id="contact" class="section">
+  <div class="section-inner" style="max-width:960px;">
+    <p class="section-tag">Get in Touch</p>
+    <h2 class="section-title reveal">LET'S TALK</h2>
+    <div class="section-rule"></div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci-item reveal"><div class="ci-label">Agency</div><div class="ci-value">Soccer Eleven<br>Football Management Agency</div></div>
+        <div class="ci-item reveal"><div class="ci-label">Manager</div><div class="ci-value">Adrian Aliaj</div></div>
+        <div class="ci-item reveal"><div class="ci-label">Email</div><div class="ci-value">info@soccer-eleven.com</div></div>
+        <div class="ci-item reveal"><div class="ci-label">Website</div><div class="ci-value">www.soccer-eleven.com</div></div>
+        <div class="ci-item reveal"><div class="ci-label">Licensed by</div><div class="ci-value">FIFA Football Agent Regulations (FFAR)</div></div>
+      </div>
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-group"><label class="form-lbl" for="f-name">Full Name</label><input class="form-inp" id="f-name" type="text" placeholder="Your name" required></div>
+          <div class="form-group"><label class="form-lbl" for="f-email">Email</label><input class="form-inp" id="f-email" type="email" placeholder="your@email.com" required></div>
+        </div>
+        <div class="form-group"><label class="form-lbl" for="f-subj">Subject</label><input class="form-inp" id="f-subj" type="text" placeholder="Transfer enquiry / Representation / Other"></div>
+        <div class="form-group"><label class="form-lbl" for="f-msg">Message</label><textarea class="form-ta" id="f-msg" placeholder="Tell us about the player, club, or opportunity..." required></textarea></div>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- footer sekcija -->
+<footer>
+  <div class="footer-logo">
+    <img src="img/Soccer11_logo.png" alt="Soccer Eleven">
+    <span class="footer-logo-text">SOCCER11</span>
+  </div>
+  <p class="footer-copy">&copy; 2025 Soccer Eleven — Football Management Agency</p>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#players">Players</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script defer src="js/players.js"></script>
+<script defer src="js/map.js"></script>
+<script defer src="js/main.js"></script>
+
+</body>
+</html>
