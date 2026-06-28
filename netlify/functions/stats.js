@@ -33,7 +33,7 @@ exports.handler = async function(event) {
 
     return {
       statusCode: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=43200" },
       body: JSON.stringify({ appearances, minutes })
     };
 
