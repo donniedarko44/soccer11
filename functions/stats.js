@@ -9,6 +9,10 @@ export async function onRequestGet({ request, env }) {
     });
   }
 
+  const cache = caches.default;
+  const cached = await cache.match(request);
+  if (cached) return cached;
+
   try {
     const res = await fetch(
       `https://v3.football.api-sports.io/players?id=${id}&season=2024`,
@@ -34,10 +38,12 @@ export async function onRequestGet({ request, env }) {
       minutes     += stat.games?.minutes     || 0;
     });
 
-    return new Response(JSON.stringify({ appearances, minutes }), {
+    const response = new Response(JSON.stringify({ appearances, minutes }), {
       status: 200,
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=43200" }
     });
+    await cache.put(request, response.clone());
+    return response;
 
   } catch (e) {
     console.error(`Error fetching player ${id}:`, e);
