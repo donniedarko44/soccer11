@@ -11,7 +11,7 @@ export async function onRequestGet({ request, env }) {
 
   try {
     const res = await fetch(
-      `https://v3.football.api-sports.io/players?id=${id}&season=2025`,
+      `https://v3.football.api-sports.io/players?id=${id}&season=2024`,
       {
         method: "GET",
         headers: { "x-apisports-key": env.API_FOOTBALL_KEY }
